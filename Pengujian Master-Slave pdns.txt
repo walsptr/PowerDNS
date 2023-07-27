@@ -1,0 +1,19 @@
+Pengujian Master-Slave pdns
+
+#pdns_control notify syawal-idn.id
+
+File Master
+
+allow-axfr-ips=<ip slave>
+local-address=<ip master>
+master=yes
+
+File Slave
+
+allow-dnsupdate-from=<ip master>
+allow-notify-from=<ip master>
+local-address=<ip slave>
+master=no
+slave=yes
+slave-cycle-interval=60
+superslave=yes
