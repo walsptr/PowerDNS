@@ -1,2 +1,0 @@
-
-Poweradmin administrator password: Please set a unique password that you will use to log into the Poweradmin control panel later on; the username will be admin
